@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+
+@
 * {
     box-sizing: border-box;
 }
@@ -19,9 +21,12 @@ body {
   border-radius: 30px;
   padding: 30px;  
   width: 50vw;
+  min-width: 280px;
   max-width: 400px;
 }
 
 .result {
-  height: 200px;
+  height: 30vh;
+  max-height: 200px;
+  min-height: 80px;
 }
