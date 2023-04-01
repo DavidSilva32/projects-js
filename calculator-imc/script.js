@@ -22,7 +22,7 @@ button.addEventListener('click', () => {
             estado = 'com obesidade extrema'
         }
 
-        res.textContent = `${nome} seu IMC é ${imc} e você está ${estado}!`
+        res.innerHTML = `<p><strong>${nome.toUpperCase()}</strong> seu IMC é <strong>${imc}</strong>, e você está <strong>${estado}</strong>!</p>`
     } else {
         res.textContent = 'Preencha os campos!'
     }
