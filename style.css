@@ -9,7 +9,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: linear-gradient(to right, #222, red);
+  background: linear-gradient(to right, #222, blue);
 }
 
 .grid-container{
