@@ -10,8 +10,16 @@ strong {
     color: red;
 }
 
+main .card {
+    border: none;
+}
+
 main .img {
     min-height: 50vh;
+}
+
+main p {
+    line-height: 1.5em;   
 }
 
 /* Footer */

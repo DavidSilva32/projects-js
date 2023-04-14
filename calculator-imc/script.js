@@ -26,6 +26,4 @@ button.addEventListener('click', () => {
     } else {
         res.textContent = 'Preencha os campos!'
     }
-
-    console.log(nome)
 })
