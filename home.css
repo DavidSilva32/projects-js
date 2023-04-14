@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+strong {
+    color: red;
+}
+
+main .img {
+    min-height: 50vh;
+}
+
+/* Footer */
+
+footer a {
+    color: red;
+    font-size: 1.2em;
+    padding-right: 5px;
+}
