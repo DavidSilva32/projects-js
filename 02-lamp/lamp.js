@@ -16,8 +16,7 @@ function isLampBroken() {
 }
 
 function lampOn() {
-    if ( !isLampBroken
-        () ) {
+    if ( !isLampBroken() ) {
         img.src = './img/ligada.jpg'
         turnOnOff.textContent = 'Turn off'
     }
