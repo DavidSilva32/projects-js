@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  transition: 1s;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 0;
+}
+@media (max-width: 768px) {
+  .main {
+    height: 500px;
+  }
+}
+@media (max-width: 768px) {
+  .main-img img {
+    height: 90%;
+  }
+}
+.main-buttons {
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .main-buttons {
+    margin-top: 0px;
+  }
+}
+.main-buttons button {
+  padding: 12px 24px;
+}
+@media (max-width: 768px) {
+  .main-buttons button {
+    padding: 2vw 3vw;
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 138px;
+}
+.footer a {
+  font-size: 20px;
+  padding-left: 5px;
+}
+.footer a:hover {
+  color: #fff;
+}
+.footer #linkedin:hover {
+  color: #07d7f7;
+}
+.footer #whatsapp:hover {
+  color: #4ff707;
+}
+
+/*# sourceMappingURL=style.css.map */

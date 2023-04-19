@@ -1,0 +1,52 @@
+@use 'mixins'
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: Arial, Helvetica, sans-serif
+
+body
+    height: 100vh
+    transition: 1s
+
+.main
+    @include mixins.container
+    padding: 20px 0
+
+    @include mixins.mobile
+        height: 500px
+
+    &-img img
+        @include mixins.mobile
+            height: 90%
+
+    &-buttons
+        margin-top: 20px 
+
+        @include mixins.mobile
+            margin-top: 0px
+
+        & button
+            padding: 12px 24px
+
+            @include mixins.mobile
+                padding: 2vw 3vw
+                        
+.footer
+    @include mixins.container
+    height: 138px 
+
+    & a
+        font-size: 20px
+        padding-left: 5px
+
+        &:hover
+            color: #fff
+
+    & #linkedin
+        &:hover
+            color: #07d7f7
+    & #whatsapp
+        &:hover
+            color: #4ff707
