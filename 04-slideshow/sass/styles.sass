@@ -1,0 +1,125 @@
+@use "mixins"
+@use "variables"
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+body
+    @include mixins.center
+    flex-direction: column
+    gap: 2rem
+    width: 100vw
+    height: 100vh
+    transition: all .4s
+    background: #fff
+    min-height: 500px
+
+    .container
+        @include mixins.width-height
+        @include mixins.center
+        justify-content: space-between
+        background: black
+        border-radius: variables.$border-radius
+        box-shadow: 0 20px 30px black
+
+        @include mixins.mobile
+            @include mixins.width-height-mobile
+            
+
+        &-items
+            @include mixins.width-height
+            display: flex
+            position: absolute
+            border-radius: variables.$border-radius
+            overflow: hidden
+
+            @include mixins.mobile
+                @include mixins.width-height-mobile
+                
+
+            & .item
+                @include mixins.width-height
+                transition: all 1s
+
+                @include mixins.mobile
+                    @include mixins.width-height-mobile
+                    
+
+                img
+                    @include mixins.width-height
+                    border-radius: variables.$border-radius
+
+                    @include mixins.mobile
+                        @include mixins.width-height-mobile
+                        
+
+                &:first-child
+                    margin-left: -100%    
+
+
+        .action-button
+            @include mixins.center
+            @include mixins.width-height
+            z-index: 1
+            font: bold 4rem sans-serif
+            color: #00000000
+            width: 50px
+            user-select: none
+            cursor: pointer
+            border-radius: variables.$border-radius
+            transition: all .4s
+
+            @include mixins.mobile
+                min-height: 300px
+                max-height: 450px
+
+            &:hover
+                color: #fff
+                background: #00000055
+    
+// Checkbox
+
+.dark
+    background: #222
+
+.theme
+    
+    & .checkbox
+        opacity: 0
+
+        &:checked + .label .ball
+            transform: translateX(24px)
+
+    & .label
+        @include mixins.center
+        background: #111
+        border-radius: 50px
+        justify-content: space-between
+
+        height: 26px
+        width: 50px
+        padding: 5px 
+        position: relative 
+        cursor: pointer
+
+        transform: scale(1.5) 
+
+        & .fa-moon
+            color: #fff
+
+        & .fa-sun 
+            color: #f1c401   
+
+        & .ball
+            background: #fff
+            border-radius: 50%
+            position: absolute
+            top: 2px
+            left: 2px
+            width: 22px
+            height: 22px
+
+            transform: translateX(0px)
+            transition: transform 0.2s linear

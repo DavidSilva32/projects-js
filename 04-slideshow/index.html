@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+
+    <!-- Styles -->
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- Font Awesome -->
+
+    <script src="https://kit.fontawesome.com/78690d003f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="theme">
+        <input class="checkbox" type="checkbox" name="check" id="check">
+        <label class="label" for="check">
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-sun"></i>
+            <div class="ball"></div>
+        </label>
+    </div>
+    <section class="container">
+        <div class="action-button" id="previous">&laquo;</div>
+        <div class="container-items" id="container-items"></div>
+        <div class="action-button" id="next">&raquo;</div>
+    </section>
+    <script src="slideShow.js"></script>
+</body>
+</html>
