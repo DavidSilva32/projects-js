@@ -25,7 +25,14 @@ const cards = [
     live: "https://davidsilva32.github.io/projects-js/03-traffic-light/index.html",
     code: "https://github.com/DavidSilva32/projects-js/tree/main/03-traffic-light",
   },
-  { id: 4, img: "img/slideshow.jpg", title: "Slideshow", text: "In this project, i learned about slide and creating elements in <strong>JavaScript</strong>.", live: "", code: "" },
+  {
+    id: 4,
+    img: "img/slideshow.jpg",
+    title: "Slideshow",
+    text: "In this project, i learned about slide and creating elements in <strong>JavaScript</strong>.",
+    live: "https://davidsilva32.github.io/projects-js/04-slideshow/index.html",
+    code: "https://github.com/DavidSilva32/projects-js/tree/main/04-slideshow",
+  },
 ];
 
 const containerCards = document.querySelector("#container-cards");
