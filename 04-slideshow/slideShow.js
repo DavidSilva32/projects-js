@@ -39,6 +39,8 @@ document.querySelector("#next").addEventListener("click", next);
 
 // Change Theme
 
-document.querySelector("#check").addEventListener("change", () => {
-  document.body.classList.toggle("dark");
-});
+document
+  .querySelector("#check")
+  .addEventListener("change", () => {
+    document.body.classList.toggle("dark");
+  });

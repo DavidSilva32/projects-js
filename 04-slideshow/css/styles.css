@@ -24,7 +24,7 @@ body .container {
   align-items: center;
   justify-content: center;
   justify-content: space-between;
-  background: black;
+  background: #000;
   border-radius: 10px;
   box-shadow: 0 20px 30px black;
 }
